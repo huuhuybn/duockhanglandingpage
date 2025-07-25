@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.logo {
+  color: #198754;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: #198754;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+  background: #198754;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #146c43;
+}
+/* Xóa các style liên quan đến .btn-secondary, .cta-register */
+.btn-secondary, .btn-secondary:hover, .cta-register, .cta-register p, .cta-register h2 {
+  display: none !important;
+}
+.hero {
+  background: linear-gradient(90deg, #e9f7ef 0%, #fff 100%);
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: #198754;
+  margin-bottom: 12px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+.hero-cta .btn {
+  margin: 0 8px 8px 0;
+}
+.contact-quick {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 16px 0;
+}
+.contact-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.products-highlight {
+  background: #f1fdf6;
+  padding: 40px 0 24px 0;
+}
+.products-highlight h2 {
+  color: #198754;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 24px 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #198754;
+  box-shadow: 0 2px 8px rgba(25,135,84,0.04);
+  transition: box-shadow 0.2s;
+}
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(25,135,84,0.10);
+}
+.about, .services, .products-list, .company-profile, .contact-form, .cta-register {
+  padding: 40px 0 24px 0;
+}
+.about h2, .services h2, .products-list h2, .company-profile h2, .contact-form h2, .cta-register h2 {
+  color: #198754;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.service-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.service-list li {
+  margin-bottom: 8px;
+}
+.products-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.products-columns ul {
+  list-style: disc inside;
+  min-width: 180px;
+  padding: 0 8px;
+}
+.products-columns li {
+  margin-bottom: 6px;
+}
+.company-profile ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.company-profile li {
+  margin-bottom: 8px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto 16px auto;
+}
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.contact-form button {
+  width: fit-content;
+  align-self: flex-end;
+}
+.contact-person {
+  text-align: center;
+  margin-top: 12px;
+}
+.footer {
+  background: #198754;
+  color: #fff;
+  padding: 24px 0 12px 0;
+  font-size: 1rem;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 4px;
+  transition: color 0.2s;
+}
+.footer a:hover {
+  color: #d1e7dd;
+}
+@media (max-width: 900px) {
+  .products-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-flex {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-flex {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 6px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-flex {
+    font-size: 0.95rem;
+  }
+} 
