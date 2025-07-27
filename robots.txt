@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://duockhang.vn/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all other content
+Allow: /about/
+Allow: /products/
+Allow: /blog/
+Allow: /contact/
+Allow: /faq/
+Allow: /*.html 
